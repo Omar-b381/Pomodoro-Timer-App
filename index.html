@@ -216,12 +216,12 @@
             <button id="muteBtn" class="mute-toggle" title="كتم/تفعيل الصوت">🔔</button>
             
             <div class="mode-tabs">
-                <button class="mode-btn active" data-time="25" data-mode="focus">تركيز</button>
-                <button class="mode-btn" data-time="5" data-mode="short">استراحة قصيرة</button>
+                <button class="mode-btn active" data-time="50" data-mode="focus">تركيز</button>
+                <button class="mode-btn" data-time="10" data-mode="short">استراحة قصيرة</button>
                 <button class="mode-btn" data-time="15" data-mode="long">استراحة طويلة</button>
             </div>
 
-            <div class="timer-display" id="timer">25:00</div>
+            <div class="timer-display" id="timer">50:00</div>
 
             <div class="controls">
                 <button id="startBtn" class="btn btn-primary">ابدأ</button>
@@ -265,8 +265,8 @@
          * =========================================
          */
         const AppState = {
-            timeLeft: 25 * 60,
-            originalTime: 25 * 60,
+            timeLeft: 50 * 60,
+            originalTime: 50 * 60,
             timerId: null,
             isRunning: false,
             currentMode: 'focus', // focus, short, long
@@ -275,8 +275,8 @@
         };
 
         const MODES = {
-            focus: { time: 25, label: 'تركيز' },
-            short: { time: 5, label: 'استراحة قصيرة' },
+            focus: { time: 50, label: 'تركيز' },
+            short: { time: 10, label: 'استراحة قصيرة' },
             long: { time: 15, label: 'استراحة طويلة' }
         };
 
